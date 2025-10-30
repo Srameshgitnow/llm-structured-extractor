@@ -3,6 +3,7 @@
 This project shows how to use an LLM with a response schema to reliably extract structured fields from free-form text.
 The notebook extractdatawithreponseschema.ipynb demonstrates prompting the model with a JSON Schema (or equivalent typed schema) so the output is well-formed JSON that maps directly to your target fields.
 
+
 ✨ What it does
 
 Takes unstructured input text (e.g., product/order messages).
@@ -19,10 +20,12 @@ price_value (number)
 
 Works with OpenAI (Structured Outputs / JSON mode), Azure OpenAI, or LangChain (Pydantic / TypedDict). The notebook includes cells you can toggle for your stack.
 
+
 📁 Files
 .
 ├── extractdatawithreponseschema.ipynb
 └── README.md
+
 
 🧰 Requirements
 
@@ -45,16 +48,16 @@ pip install openai
 pip install langchain pydantic
 pip install python-dotenv
 
+
 🔐 Environment Variables
 
 Create a .env file (if using hosted LLMs):
 
 OPENAI_API_KEY=your_api_key_here
-# AZURE_OPENAI_API_KEY=...
-# AZURE_OPENAI_ENDPOINT=...
 
 
 The notebook loads .env automatically if present.
+
 
 🧩 Response Schema (Example)
 
@@ -84,6 +87,7 @@ Expected model output
   "price_value": 25
 }
 
+
 🚀 Running the Notebook
 
 Clone your repo and enter the folder:
@@ -105,6 +109,7 @@ Open the notebook and run cells top-to-bottom.
 
 Select the OpenAI path (Responses API with JSON schema) or the LangChain.
 
+
 🧪 Test Quickly
 
 Try these sample inputs inside the notebook:
@@ -117,6 +122,7 @@ Try these sample inputs inside the notebook:
 
 The schema will coerce/normalize the fields and validate types.
 
+
 🛡️ Validation & Error Handling
 
 Validation: The notebook validates the model’s JSON against the schema (Pydantic or jsonschema).
@@ -128,6 +134,7 @@ Attempts a lightweight repair (strip code fences, fix trailing commas).
 Re-prompts with the schema and the model’s previous attempt.
 
 Guardrails: additionalProperties:false prevents unexpected fields.
+
 
 🔄 Adapting to Your Stack
 
