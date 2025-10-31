@@ -62,6 +62,7 @@ OPENAI_API_KEY=your_api_key_here
 
 The notebook loads .env automatically if present.
 
+--------------------------------------------------------------------------------------------------
 
 🧩 Response Schema (Example)
 
@@ -91,6 +92,7 @@ Expected model output
   "price_value": 25
 }
 
+--------------------------------------------------------------------------------------------------
 
 🚀 Running the Notebook
 
@@ -113,6 +115,7 @@ Open the notebook and run cells top-to-bottom.
 
 Select the OpenAI path (Responses API with JSON schema) or the LangChain.
 
+--------------------------------------------------------------------------------------------------
 
 🧪 Test Quickly
 
@@ -126,6 +129,7 @@ Try these sample inputs inside the notebook:
 
 The schema will coerce/normalize the fields and validate types.
 
+--------------------------------------------------------------------------------------------------
 
 🛡️ Validation & Error Handling
 
@@ -139,6 +143,7 @@ Re-prompts with the schema and the model’s previous attempt.
 
 Guardrails: additionalProperties:false prevents unexpected fields.
 
+--------------------------------------------------------------------------------------------------
 
 🔄 Adapting to Your Stack
 
@@ -157,6 +162,8 @@ If you also need currency codes, extend schema like:
 
 
 delivery_days expects an integer; phrases like “2–4 days” can be normalized (e.g., take the lower bound) in a post-processing step—sample code included in the notebook.
+
+--------------------------------------------------------------------------------------------------
 
 🧾 License
 
