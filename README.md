@@ -25,8 +25,7 @@ Works with OpenAI (Structured Outputs / JSON mode), Azure OpenAI, or LangChain (
 
 📁 Files
 .
-├── extractdatawithreponseschema.ipynb
-└── README.md
+![alt text](image.png)
 
 --------------------------------------------------------------------------------------------------
 
