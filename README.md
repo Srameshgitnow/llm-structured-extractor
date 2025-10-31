@@ -3,6 +3,7 @@
 This project shows how to use an LLM with a response schema to reliably extract structured fields from free-form text.
 The notebook extractdatawithreponseschema.ipynb demonstrates prompting the model with a JSON Schema (or equivalent typed schema) so the output is well-formed JSON that maps directly to your target fields.
 
+--------------------------------------------------------------------------------------------------
 
 ✨ What it does
 
@@ -20,12 +21,14 @@ price_value (number)
 
 Works with OpenAI (Structured Outputs / JSON mode), Azure OpenAI, or LangChain (Pydantic / TypedDict). The notebook includes cells you can toggle for your stack.
 
+--------------------------------------------------------------------------------------------------
 
 📁 Files
 .
 ├── extractdatawithreponseschema.ipynb
 └── README.md
 
+--------------------------------------------------------------------------------------------------
 
 🧰 Requirements
 
@@ -48,6 +51,7 @@ pip install openai
 pip install langchain pydantic
 pip install python-dotenv
 
+--------------------------------------------------------------------------------------------------
 
 🔐 Environment Variables
 
